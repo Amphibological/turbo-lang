@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    display: inline;
+}
+
+textarea {
+    resize: none;
+    display: block;
+    margin: 10px;
+}
+
+.btn {
+    margin: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: gray;
+    border: 0;
+    box-shadow: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button {
+    vertical-align: top;
+}
+
+.btn:hover {
+    background-color: lightgray;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+}
+
+.error {
+    color: red;
+}
+
+#copy {
+    display: none;
+}

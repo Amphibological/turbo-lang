@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Turbo Web IDE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" type="text/css">
+</head>
+<body>
+    <h1>Turbo Web IDE (WIP, Not Yet Functional)</h1>
+    <h3>Type some code below to run it.</h3>
+    <form action="{{ url_for('run_code') }}" method="POST">
+        <textarea id="code" name="code" rows="10" cols="80" placeholder="Enter code here...">{{ program }}</textarea>
+        <textarea id="args" name="args" rows="10" cols="80" placeholder="Command line arguments go here, one on each line...">{{ args }}</textarea>
+        <textarea id="input" name="input" rows="3" cols="80" placeholder="Put your input here...">{{ input }}</textarea>
+        <input type="submit" class="btn" id="run-btn" value="Run Code">
+    </form>
+
+    <button id="permalink-btn" onclick="genPermalink();" class="btn">Generate Permalink</button>
+    <span id="copy"></span>
+    <textarea id="output" class="{{ output_class }}" name="output" rows="5" cols="80" readonly>{{ output }}</textarea>
+
+    <script>
+        function genPermalink() {
+            window.prompt("Copy to clipboard: Ctrl+C, Enter", document.location.href);
+        }
+    </script>
+</body>
+</html>
