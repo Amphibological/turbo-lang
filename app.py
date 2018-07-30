@@ -1,7 +1,7 @@
 from flask import Flask, render_template, url_for, request, redirect
 
 from core.interpreter import interpret, lex  # TODO REMOVE LEX
-from core.stack import Stack
+from core.utils import Stack
 import core.io as io
 
 app = Flask(__name__)

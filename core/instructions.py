@@ -5,7 +5,7 @@ Data types will be given already converted into the types required.
 Metas will have callables pushed on to the stack for them."""
 
 
-from core.stack import Stack
+from core.utils import Stack
 import core.io as io
 
 def run_block(s):

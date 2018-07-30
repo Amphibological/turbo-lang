@@ -4,9 +4,8 @@
 from string import whitespace
 import re
 
-from core.stack import Stack
 from core.instructions import atoms, metas
-from core.utils import base_decode, TokenType, Token
+from core.utils import base_decode, TokenType, Token, Stack
 from core.typeinfo import types
 import core.io as io
 
